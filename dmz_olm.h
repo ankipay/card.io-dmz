@@ -50,7 +50,8 @@ enum {
   CardTypeVisa,
   CardTypeMastercard,
   CardTypeDiscover,
-  CardTypeMaestro
+  CardTypeMaestro,
+  CardTypeTroy
 };
 
 typedef struct {

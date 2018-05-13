@@ -78,10 +78,11 @@ dmz_card_info dmz_card_info_for_prefix_and_length(uint8_t *number_array, uint8_t
     {CardTypeDiscover,    16, 2, 65, 65},          // Discover
     {CardTypeMaestro,     16, 2, 66, 69},          // Maestro
     {CardTypeDiscover,    16, 2, 88, 88},          // China UnionPay (Discover)
+    {CardTypeTroy,        16, 1, 9, 9},            // Troy
   };
   
-  dmz_card_info card_type_unrecognized = {CardTypeUnrecognized, -1, 1, 9, 9};
-  dmz_card_info card_type_ambiguous = {CardTypeAmbiguous, -1, 1, 9, 9};
+  dmz_card_info card_type_unrecognized = {CardTypeUnrecognized, -1, 1};
+  dmz_card_info card_type_ambiguous = {CardTypeAmbiguous, -1, 1};
   
   if (number_length > 0) {
     dmz_card_info card_info = card_type_unrecognized;
